@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Virtual Interview</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Virtual Interview</h1>
+        <h2 class="question-name"></h2>
+        <p class="timer"></p>
+
+        <form action="/question-ready" method="get">
+            <button type="submit">Next Question</button>
+        </form>
+
+        <form class="" action="/" method="get">
+            <button type="submit">Exit Interview</button>
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="static/questionTimer.js" charset="utf-8"></script>
+        <script src="static/moveToNextQuestion.js" charset="utf-8"></script>
+    </body>
+</html>

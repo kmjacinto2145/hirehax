@@ -1,0 +1,17 @@
+{
+  "name": "hirehax",
+  "version": "1.0.0",
+  "description": "practice for job assessments and interviews",
+  "main": "questionSelect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "michael jacinto",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "sheetjs": "^2.0.0",
+    "xlsx": "^0.17.1"
+  }
+}
