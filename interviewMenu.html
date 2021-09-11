@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HireHax Interview</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>HireHax Interview</h1>
+        <h2>Prepare for your next virtual interview!</h2>
+        <form class="main-menu-item" action="/questions" method="post">
+
+            <label for="intro" class="qmenu-label intro">Number of intro questions (max ):</label><br>
+            <input type="number" id="intro" name="intro" value="1" min="0"><br>
+
+            <label for="motivational" class="qmenu-label motivational">Number of motivational questions (max ):</label><br>
+            <input type="number" id="motivational" name="motivational" value="1" min="0"><br>
+
+            <label for="behavioural" class="qmenu-label behavioural">Number of behavioural questions (max ):</label><br>
+            <input type="number" id="behavioural" name="behavioural" value="1" min="0"><br>
+
+            <!-- <input type="submit" value="Start Interview"></input> -->
+            <button type="submit">Start Interview</button>
+        </form>
+        <form class="main-menu-item" action="/" method="get">
+            <!-- <input type="submit" value="Back to Main Menu"></input> -->
+            <button type="submit">Back to Main Menu</button>
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="static/interviewMenu.js" charset="utf-8"></script>
+        <!-- <div class="buttons">
+
+        </div> -->
+    </body>
+</html>

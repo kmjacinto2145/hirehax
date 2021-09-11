@@ -26,13 +26,13 @@ function timer() {
     return timeSeconds;
 }
 
-timeSeconds = 60;
+var timeSeconds = 60;
 
 timer();
 counter = setInterval(timer, 1000);
 
-correct = 0;
-total = 0;
+var correct = 0;
+var total = 0;
 
 function newFace() {
     var request = new XMLHttpRequest();
@@ -40,27 +40,39 @@ function newFace() {
     request.send();
 
     var imageFile = request.response;
-    var currentEmotion = imageFile.split("/")[2];
+    currentEmotion = imageFile.split("/")[2];
     // console.log(imageFile);
 
     $(".emotify-image").attr("src", imageFile);
 
-    // console.log(currentEmotion);
+    // FIX THIS UP IN CSS
+    $(".emotify-image").attr("width", "20%");
+    $(".emotify-image").attr("height", "20%");
 
-    $(".emotion-button").on("click", function(){
-        total++;
-        // console.log($(this).text().toLowerCase());
-        if (currentEmotion === $(this).text().toLowerCase()) {
-            console.log("Correct!");
-            correct++;
-        } else {
-            console.log("Incorrect!");
-        }
-        return;
-    })
+    return;
+    // console.log(currentEmotion);
 }
 
+$(".emotion-button").on("click", function(){
+    total++;
+    console.log(currentEmotion);
+    console.log($(this).text().toLowerCase())
+    // console.log($(this).text().toLowerCase());
+    if (currentEmotion === $(this).text().toLowerCase()) {
+        // console.log("Correct!");
+        correct++;
+    } else {
+        // console.log("Incorrect!");
+    }
+
+    newFace();
+
+    // console.log("Total:", total);
+    // console.log("Correct:", correct);
+});
+
 newFace();
+
 
 // while (counter >= 0) {
 //     newFace();
