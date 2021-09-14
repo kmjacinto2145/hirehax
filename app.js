@@ -25,7 +25,7 @@ app.listen(port, function() {
 });
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/start.html");
+    res.sendFile(__dirname + "/start3.html");
 });
 
 app.get("/emotify", function(req, res){
@@ -87,11 +87,15 @@ app.get("/get-question", function(req, res) {
 });
 
 app.get("/interview-menu", function(req, res){
-    res.sendFile(__dirname + "/interviewMenu.html")
+    res.sendFile(__dirname + "/interviewMenu2.html")
 });
 
 app.get("/games-menu", function(req, res){
     res.sendFile(__dirname + "/gamesMenu.html")
+});
+
+app.get("/emotify-menu", function(req, res){
+    res.sendFile(__dirname + "/emotifyMenu.html")
 });
 
 app.get("/get-question-sheet", function(req,res) {

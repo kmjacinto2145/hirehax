@@ -33,3 +33,7 @@ body {
 .tagline {
     background-color: white;
 }
+
+.main {
+    padding-top: 20px;
+}
