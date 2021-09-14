@@ -10,3 +10,26 @@
 body {
   padding-top: 3.5rem;
 }
+
+.game-icon {
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: auto;
+}
+
+.game-title {
+    text-align: center;
+}
+
+.section-title {
+    padding-left: 15px;
+}
+
+.section-subtitle {
+    padding-left: 15px;
+}
+
+.tagline {
+    background-color: white;
+}

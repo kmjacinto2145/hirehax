@@ -1,54 +1,55 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>HireHax</title>
+        <title>HireHax</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+        <script src="https://kit.fontawesome.com/6724a48765.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="static/styles.css" rel="stylesheet">
-  </head>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <body>
+        <!-- Custom styles for this template -->
+        <link href="static/styles.css" rel="stylesheet">
+    </head>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">HireHax</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <body>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <a class="navbar-brand" href="#">HireHax</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Interview</a>
-          </li>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Emotify</a>
-              <a class="dropdown-item" href="#">Numerosity</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Interview</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Emotify</a>
+                            <a class="dropdown-item" href="#">Numerosity</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                </ul>
             </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
+        </nav>
 
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -58,13 +59,46 @@
             </div>
         </div>
 
-        <div class="container">
+        <!-- <div class="container bg-primary">
             <div class="row">
+                <h2>HireHax Interview</h2>
+            </div>
+            <div class="row">
+                <h3>Fully customisable virtual interview</h3>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <!-- <div class="row">
+                <h2 class="section-title">HireHax Games</h2>
+            </div>
+            <div class="row">
+                <h3 class="section-subtitle">Play popular psychometric games used by big companies!</h3>
+            </div> -->
+            <div class="row">
+
                 <div class="game-column col-lg-4 col-md-6">
                     <div class="card">
 
                         <div class="card-header">
-                            <h2>Emotify</h2>
+                            <img class="game-icon" src="static/interview.png" alt="">
+                            <h2 class="game-title">Interview</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Practice using a fully customisable virtual interview.</p>
+                            <button type="button" class = "btn btn-lg btn-block btn-primary">Start Interview</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="game-column col-lg-4 col-md-6">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <img class="game-icon" src="static/theater-masks.png" alt="">
+                            <h2 class="game-title">Emotify</h2>
                         </div>
                         <div class="card-body">
                             <p>Test your emotional intelligence by identifying emotions from pictures of faces.</p>
@@ -78,7 +112,8 @@
                 <div class="game-column col-lg-4 col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <h2>Numerosity</h2>
+                            <img class="game-icon" src="static/calculator.png" alt="">
+                            <h2 class="game-title">Numerosity</h2>
                         </div>
                         <div class="card-body">
                             <p>Test your arithmetic skills through rapid-fire calculations.</p>
