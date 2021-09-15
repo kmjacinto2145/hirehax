@@ -7,6 +7,11 @@
         <meta name="author" content="">
         <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
         <title>HireHax</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
@@ -23,7 +28,7 @@
     <body>
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-            <a class="navbar-brand" href="#">HireHax</a>
+            <a class="navbar-brand" href="/">HireHax</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,13 +37,13 @@
                 <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Interview</a>
+                        <a class="nav-link" href="interview-menu">Interview</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">Emotify</a>
+                            <a class="dropdown-item" href="emotify-menu">Emotify</a>
                             <a class="dropdown-item" href="#">Numerosity</a>
                         </div>
                     </li>
@@ -52,35 +57,54 @@
         </nav>
 
         <div class="container">
-            <div class="col-12 main">
-                <h1>HireHax Interview</h1>
-                <form class="main-menu-item" action="/questions" method="post">
+            <div class="row">
 
-                    <label for="intro" class="form-label qmenu-label intro">Number of intro questions (max ):</label><br>
-                    <input type="number" class="form-control" id="intro" name="intro" value="1" min="0"><br>
 
-                    <label for="motivational" class="form-label qmenu-label motivational">Number of motivational questions (max ):</label><br>
-                    <input type="number" class="form-control" id="motivational" name="motivational" value="1" min="0"><br>
+                <div class="col-6 main">
+                    <h1>HireHax Interview</h1>
+                </div>
 
-                    <label for="behavioural" class="form-label qmenu-label behavioural">Number of behavioural questions (max ):</label><br>
-                    <input type="number" class="form-control" id="behavioural" name="behavioural" value="1" min="0"><br>
-
-                    <!-- <input type="submit" value="Start Interview"></input> -->
-                    <button class="w-100 btn btn-primary btn-lg" type="submit">Start Interview</button>
-                </form>
             </div>
+            <div class="row">
+                <div class="col-6 main">
+                    <form class="main-menu-item" action="/questions" method="post">
+
+                        <label for="intro" class="form-label qmenu-label intro">Number of intro questions (max ):</label><br>
+                        <input type="number" class="form-control" id="intro" name="intro" value="1" min="0"><br>
+
+                        <label for="motivational" class="form-label qmenu-label motivational">Number of motivational questions (max ):</label><br>
+                        <input type="number" class="form-control" id="motivational" name="motivational" value="1" min="0"><br>
+
+                        <label for="behavioural" class="form-label qmenu-label behavioural">Number of behavioural questions (max ):</label><br>
+                        <input type="number" class="form-control" id="behavioural" name="behavioural" value="1" min="0"><br>
+
+                        <!-- <input type="submit" value="Start Interview"></input> -->
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Start Interview</button>
+                    </form>
+                    <br>
+                    <form class="main-menu-item" action="/" method="get">
+                        <!-- <input type="submit" value="Back to Main Menu"></input> -->
+                        <button class="w-100 btn btn-danger btn-lg" type="submit">Back to Main Menu</button>
+                    </form>
+                </div>
+
+                <div class="col-6 main">
+                    <h3>First time? See how it works.</h3>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive" src="https://www.youtube.com/embed/kh3X9DmkZRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
 
-        <div class="container">
-            <div class="col-12 main">
-                <form class="main-menu-item" action="/" method="get">
-                    <!-- <input type="submit" value="Back to Main Menu"></input> -->
-                    <button class="w-100 btn btn-primary btn-lg" type="submit">Back to Main Menu</button>
-                </form>
-            </div>
-        </div>
+
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="static/interviewMenu.js" charset="utf-8"></script>
     </body>
 </html>

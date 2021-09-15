@@ -37,3 +37,7 @@ body {
 .main {
     padding-top: 20px;
 }
+
+.game-menu-text {
+    text-align: center;
+}

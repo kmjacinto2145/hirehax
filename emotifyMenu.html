@@ -7,6 +7,12 @@
         <meta name="author" content="">
         <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
         <title>HireHax</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
@@ -22,8 +28,8 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-            <a class="navbar-brand" href="#">HireHax</a>
+        <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <a class="navbar-brand" href="/">HireHax</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,13 +38,13 @@
                 <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Interview</a>
+                        <a class="nav-link" href="interview-menu">Interview</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">Emotify</a>
+                            <a class="dropdown-item" href="emotify-menu">Emotify</a>
                             <a class="dropdown-item" href="#">Numerosity</a>
                         </div>
                     </li>
@@ -49,10 +55,47 @@
 
                 </ul>
             </div>
-        </nav>
+        </nav> -->
+
+        <div class="container h-100">
+            <div class="row align-items-center haxbox">
+                <div class="col-6 mx-auto">
+                    <div class="jumbotron">
+                        <img class="game-icon" src="static/theater-masks.png" alt="">
+                        <h1 class="game-menu-text">HireHax Emotify</h1>
+                        <h3>Instructions:</h3>
+                        <p>On your screen, images of faces will appear. There will also be seven emotion buttons: </p>
+                        <ul>
+                            <li>Angry</li>
+                            <li>Disgusted</li>
+                            <li>Fearful</li>
+                            <li>Happy</li>
+                            <li>Neutral</li>
+                            <li>Sad</li>
+                            <li>Surprised</li>
+                        </ul>
+                        <p>Choose the emotion that best matches the face given. You will be given 60 seconds to match as many faces as you can.</p>
+                        <div class="row">
+                            <div class="col-6 main">
+                                <form class="main-menu-item" action="/emotify" method="get">
+                                    <button class="w-100 btn btn-primary btn-lg" type="submit">Start Game</button>
+                                </form>
+                            </div>
+                            <div class="col-6 main">
+                                <form class="main-menu-item" action="/" method="get">
+                                    <button class="w-100 btn btn-danger btn-lg" type="submit">Back to Main Menu</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="static/interviewMenu.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
