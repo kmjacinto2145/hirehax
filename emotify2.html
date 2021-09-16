@@ -27,6 +27,7 @@
     </head>
 
     <body>
+
         <div class="container h-100">
             <div class="row align-items-center haxbox">
                 <div class="col-6 mx-auto">
@@ -34,39 +35,58 @@
                         <img class="game-icon" src="static/theater-masks.png" alt="">
                         <h1 class="game-menu-text">HireHax Emotify</h1>
                         <hr>
-                        <h3>Instructions:</h3>
-                        <p>On your screen, images of faces will appear. There will also be seven emotion buttons: </p>
-                        <ul>
-                            <li>Angry</li>
-                            <li>Disgusted</li>
-                            <li>Fearful</li>
-                            <li>Happy</li>
-                            <li>Neutral</li>
-                            <li>Sad</li>
-                            <li>Surprised</li>
-                        </ul>
-                        <p>Choose the emotion that best matches the face given. You will be given 60 seconds to match as many faces as you can.</p>
+                        <h2 class="timer"></h2>
+                        <div class="img-div">
+                            <img class="emotify-image">
+                        </div>
+
+
                         <div class="row">
                             <div class="col-6 main">
-                                <form class="main-menu-item" action="/emotify" method="get">
-                                    <button class="w-100 btn btn-primary btn-lg" type="submit">Start Game</button>
-                                </form>
+                                <button class="w-100 btn btn-primary btn-lg emotion-button angry" type="submit">Angry</button>
                             </div>
+                            <div class="col-6 main">
+                                <button class="w-100 btn btn-primary btn-lg emotion-button disgusted" type="submit">Disgusted</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 main">
+                                <button class="w-100 btn btn-primary btn-lg emotion-button fearful" type="submit">Fearful</button>
+                            </div>
+                            <div class="col-6 main">
+                                <button class="w-100 btn btn-primary btn-lg emotion-button happy" type="submit">Happy</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 main">
+                                <button class="w-100 btn btn-primary btn-lg emotion-button neutral" type="submit">Neutral</button>
+                            </div>
+                            <div class="col-6 main">
+                                <button class="w-100 btn btn-primary btn-lg emotion-button sad" type="submit">Sad</button>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-6 main">
+                                <button class="w-100 btn btn-primary btn-lg emotion-button surprised" type="submit">Surprised</button>
+                            </div>
+
                             <div class="col-6 main">
                                 <form class="main-menu-item" action="/" method="get">
                                     <button class="w-100 btn btn-danger btn-lg" type="submit">Back to Main Menu</button>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="static/emotifyTimer.js" charset="utf-8"></script>
     </body>
 </html>

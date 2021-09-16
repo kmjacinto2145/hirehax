@@ -27,46 +27,40 @@
     </head>
 
     <body>
+
         <div class="container h-100">
             <div class="row align-items-center haxbox">
                 <div class="col-6 mx-auto">
                     <div class="jumbotron">
-                        <img class="game-icon" src="static/theater-masks.png" alt="">
-                        <h1 class="game-menu-text">HireHax Emotify</h1>
+                        <img class="game-icon" src="static/interview.png" alt="">
+                        <h1 class="game-menu-text">HireHax Interview</h1>
                         <hr>
-                        <h3>Instructions:</h3>
-                        <p>On your screen, images of faces will appear. There will also be seven emotion buttons: </p>
-                        <ul>
-                            <li>Angry</li>
-                            <li>Disgusted</li>
-                            <li>Fearful</li>
-                            <li>Happy</li>
-                            <li>Neutral</li>
-                            <li>Sad</li>
-                            <li>Surprised</li>
-                        </ul>
-                        <p>Choose the emotion that best matches the face given. You will be given 60 seconds to match as many faces as you can.</p>
+                        <p class="question-name"></p>
+                        <h3 class="timer"></h3>
                         <div class="row">
                             <div class="col-6 main">
-                                <form class="main-menu-item" action="/emotify" method="get">
-                                    <button class="w-100 btn btn-primary btn-lg" type="submit">Start Game</button>
+                                <form action="/question-ready" method="get">
+                                    <button type="submit" class="btn btn-lg btn-block btn-primary">Done Answering</button>
                                 </form>
                             </div>
+
                             <div class="col-6 main">
-                                <form class="main-menu-item" action="/" method="get">
-                                    <button class="w-100 btn btn-danger btn-lg" type="submit">Back to Main Menu</button>
+                                <form class="" action="/" method="get">
+                                    <button type="submit" class="btn btn-lg btn-block btn-danger">Exit Interview</button>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="static/questionTimer.js" charset="utf-8"></script>
+        <script src="static/moveToNextQuestion.js" charset="utf-8"></script>
     </body>
 </html>

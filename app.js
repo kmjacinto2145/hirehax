@@ -20,8 +20,8 @@ function getRandomImage() {
     return emotionSelected + "/im" + randomImageIndex + ".png";
 }
 
-app.listen(port, function() {
-    console.log("Server started on port " + port);
+app.listen(process.env.PORT || port, function() {
+    console.log("Server is running");
 });
 
 app.get("/", function(req, res) {
@@ -29,12 +29,12 @@ app.get("/", function(req, res) {
 });
 
 app.get("/emotify", function(req, res){
-    res.sendFile(__dirname + "/emotify.html");
+    res.sendFile(__dirname + "/emotify2.html");
 })
 
 app.post("/questions", function(req, res) {
     // Import questions
-    console.log(req.body);
+    // console.log(req.body);
     const introQCount = req.body.intro;
     const motivQCount = req.body.motivational;
     const behavQCount = req.body.behavioural;
@@ -57,21 +57,21 @@ app.post("/questions", function(req, res) {
     allQSelected = introQSelected.concat(motivQSelected).concat(behavQSelected);
     // console.log(allQSelected)
 
-    res.sendFile(__dirname + "/questionReadyPage.html");
+    res.sendFile(__dirname + "/questionReadyPage2.html");
 })
 
 app.get("/question-ready", function(req, res) {
     // console.log(allQSelected.length);
 
     if (allQSelected.length === 0) {
-        res.sendFile(__dirname + "/endInterview.html");
+        res.sendFile(__dirname + "/endInterview2.html");
     } else {
-        res.sendFile(__dirname + "/questionReadyPage.html");
+        res.sendFile(__dirname + "/questionReadyPage2.html");
     }
 })
 
 app.get("/question-page", function(req, res) {
-    res.sendFile(__dirname + "/question.html");
+    res.sendFile(__dirname + "/question2.html");
 })
 
 app.get("/getface", function(req,res){
@@ -90,9 +90,6 @@ app.get("/interview-menu", function(req, res){
     res.sendFile(__dirname + "/interviewMenu2.html")
 });
 
-app.get("/games-menu", function(req, res){
-    res.sendFile(__dirname + "/gamesMenu.html")
-});
 
 app.get("/emotify-menu", function(req, res){
     res.sendFile(__dirname + "/emotifyMenu.html")
